@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+.first{
+    text-align: center;
+    line-height:50px;
+    background-color: lch(35.79% 108.39 303.72);
+
+}
+#h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+    
+}
+#firstp{
+    text-transform: capitalize;
+}
+/* second div section*/
+.divs{
+    text-align: center;
+    background-color: rgb(108, 108, 245);
+    line-height: 40px;
+}
+#nav{
+    color: rgb(243, 247, 250);
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* thired div section*/
+.divthired{
+    background-color:rgb(222, 175, 87) ;
+    line-height: 50px;
+
+}
+#bold1{
+    color: brown;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline solid brown;
+    font-weight: bold;
+}
+#bold2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(236, 78, 20);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#secondp{
+    text-transform: capitalize;
+    text-indent: 50px;
+}
