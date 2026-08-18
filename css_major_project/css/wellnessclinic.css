@@ -1,0 +1,483 @@
+#wellness {
+    color: gold;
+}
+
+@keyframes scale {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.section1 {
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    background-image: url("../images/wellclinic-section1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    animation: scale 4s ease 0.1s forwards;
+}
+
+.section1 h1 {
+    display: flex;
+    padding-top: 20%;
+    align-content: center;
+    justify-content: center;
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    animation: slide 1.2s ease 0.2s forwards;
+}
+
+@keyframes cardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c5f66;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section2>h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.section2>P {
+    padding-top: 2%;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2c5f66;
+}
+
+.section21 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c5f66;
+}
+
+.sec211,
+.sec212,
+.sec213 {
+    height: 400px;
+    padding-right: 4%;
+    width: 400px;
+    animation-name: cardReveal;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+.sec212 {
+    animation-range: entry 15% entry 100%;
+}
+
+.sec213 {
+    animation-range: entry 30% entry 100%;
+}
+
+.sec211 img,
+.sec212 img,
+.sec213 img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    height: 100px;
+    width: 100px;
+}
+
+.sec211 h2,
+.sec212 h2,
+.sec213 h2 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+.sec211 p,
+.sec212 p,
+.sec213 p {
+    padding-top: 5%;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+
+.sec22-treatment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.treatment-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+    animation-name: fadeIn;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+.treatment-card:hover {
+    transform: translateY(-6px);
+}
+
+.treatment-card.featured {
+    width: 350px;
+}
+
+.treatment-card-image {
+    position: relative;
+    height: 220px;
+}
+
+.treatment-card.featured .treatment-card-image {
+    height: 300px;
+}
+
+.treatment-card-image img:hover {
+    transform: scale(1.1);
+}
+
+.treatment-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.badge-discount {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.badge-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #2c5f66;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    border-bottom-left-radius: 10px;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.badge-booked {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.treatment-card-body {
+    padding: 16px;
+}
+
+.treatment-card-studio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.treatment-card-title {
+    font-size: 25px;
+    color: goldenrod;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.treatment-card-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.treatment-card-location {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.treatment-card-rating {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.treatment-card-rating .stars {
+    color: goldenrod;
+}
+
+.treatment-card-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.price-new {
+    color: #6a1b9a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price-off {
+    background-color: #f1e4fb;
+    color: #6a1b9a;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.treatment-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.treatment-card button:hover {
+    background-color: #b8860b;
+}
+
+.section23 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px 5% 40px;
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../images/section1bck.png");
+    background-attachment: fixed;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.section31,
+.section32,
+.section33,
+.section34 {
+    padding: 20px
+}
+
+@property --num {
+    syntax: '<integer>';
+    inherits: false;
+    initial-value: 0;
+}
+
+@keyframes countUp {
+    from {
+        --num: 0;
+    }
+}
+
+.section31 h1,
+.section32 h1,
+.section33 h1,
+.section34 h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.counter {
+    counter-reset: num var(--num);
+    animation-name: countUp;
+    animation-duration: 2s;
+    animation-duration: 15s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.counter::before {
+    content: counter(num) "+";
+}
+
+.section31 p,
+.section32 p,
+.section33 p,
+.section34 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.section41 {
+    display: flex;
+    height: 70vh;
+    width: 90%;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    background-image: url("../images/clicic\ enterence.png");
+}
+
+.section411 p {
+    text-align: center;
+    font-size: 30px;
+    color: goldenrod;
+}
+
+.section41 div h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #484040;
+}
+
+.section412 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 380px;
+    width: 440px;
+    border-radius: 20px;
+}
+
+.section412 form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.section412 input {
+    width: 100%;
+    font-size: 30px;
+    padding: 8px 4px;
+    border: none;
+    border-bottom: 2px solid rgb(169, 162, 162);
+    background: transparent;
+    color: rgb(80, 80, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section412 input::placeholder {
+    color: rgb(172, 160, 160);
+}
+
+.section412 input:focus {
+    outline: none;
+    border-bottom-color: goldenrod;
+}
+
+.section412 button {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 20px;
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section412 button:hover {
+    background-color: #b8860b;
+}

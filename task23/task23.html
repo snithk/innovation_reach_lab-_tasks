@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 100vh;
+        gap: 30px;
+      }
+      .div1,
+      .div2,
+      .div3,.div4 ,.div5,.div6{
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: #c02121;
+        text-align: center;
+        font-size: 25px;
+        text-transform: capitalize;
+        font-weight: bolder;
+      }
+
+      .msg {
+        height: 70px;
+        width: 100px;
+        border: 3px solid #000;
+        border-radius: 50% 50% 1% 50%;
+        background-color: #0faec3;
+        display: flex;
+        margin-top: 100px;
+        margin-left: 180px;
+        justify-content: center;
+        align-items: center;
+      }
+      .loader,.loader1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+      }
+      .span {
+        height: 10px;
+        width: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        animation: dots 1s linear 1s infinite;
+      }
+
+      .div1 .loader span:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .div1 .loader span:nth-child(3) {
+        animation-delay: 0.7s;
+      }
+      .div1 .loader span:nth-child(4) {
+        animation-delay: 1s;
+      }
+      @keyframes dots {
+        0%,
+        100% {
+          opacity: 0.5;
+          background-color: #b8afaf;
+        }
+        50% {
+          opacity: 1;
+          background-color: #ffffff;
+        }
+      }
+      .bracket {
+        font-size: 50px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .span1 {
+        animation: brackets 2s infinite;
+        color: #ffffff;
+      }
+      .bracket .span1:nth-child(2) {
+        animation-delay: 1s;
+      }
+      @keyframes brackets {
+        0%,
+        100% {
+          transform: scale(0.7);
+          opacity: 0.3;
+          color: #ffffff;
+        }
+        50% {
+          transform: scale(1);
+          opacity: 1;
+          color: #fff;
+        }
+      }
+      .music{
+        margin-top: 100px;
+      }
+      .span2 {
+        background-color: #ece3e3;
+        border: #e5b1b1;
+        width: 10px;
+        display: inline-block;
+        height: 30px;
+        transform: translateX(-10px);
+        animation: music 1s linear infinite;
+      }
+      .music .span2:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .music .span2:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      .music .span2:nth-child(4) {
+        animation-delay: 0.6;
+      }
+      .music .span2:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+      .music .span2:nth-child(6) {
+        animation-delay: 1s;
+      }
+      .music .span2:nth-child(7) {
+        animation-delay: 1.2s;
+      }
+
+      @keyframes music {
+        0%,
+        100% {
+          transform: scaleY(0.5);
+          opacity: 0.3;
+          background-color: #2ec22e;
+        }
+        50% {
+          transform: scaleY(1.2);
+          opacity: 0.7;
+          background-color: #46ce15;
+        }
+        80% {
+          transform: scaleY(2);
+          opacity: 1;
+          background-color: #cf096c;
+        }
+      }
+      
+      .span3{
+
+         height: 10px;
+        width: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        animation: dots3d 1s ease-in-out 1s infinite;
+        gap:10px
+      }
+      .loader1{
+        margin-top: 25%;
+        perspective: 1000px;
+        gap:10px
+      }
+      .div1 .loader1 span:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .div1 .loader1 span:nth-child(3) {
+        animation-delay: 0.7s;
+      }
+      .div1 .loader1 span:nth-child(4) {
+        animation-delay: 1s;
+      }
+      @keyframes dots3d {
+        0%,
+        100% {
+          opacity: 0.5;
+          transform: translateZ(0) scale(1);
+          background-color: #7a7070;
+        
+        }
+        50% {
+          opacity: 1;
+           transform: translateZ(50px) scale(1.8) ;
+            background-color: #ffffff;
+     
+        }
+      }
+      
+      .outer{
+        margin-top: 20%;        
+        height:100px;
+        margin-left: 40%;
+        width:100px;
+       border-radius: 50%;
+        padding: 5px;
+        background-color: #43ef54;
+        animation: rotate 1s infinite;
+
+      }
+      .inner{
+        height:90px;
+        width:90px;
+        border-radius: 50%;
+        background-image: conic-gradient(white 0deg 90deg,rgb(43, 217, 43) 90deg  180deg,white 180deg 270deg,rgb(43, 217, 43) 270deg);
+         transform: rotate(1turn);
+      }
+      @keyframes rotate{
+        from{
+            transform: rotate(0turn);
+        }
+        to{
+            transform: rotate(1turn);
+        }
+      }
+      .text{
+        text-transform: capitalize;
+        font-size: 35px;
+        margin-top: 20%;
+        animation: load 1s  ease-in-out infinite 1s;
+    
+
+      }
+      @keyframes load{
+        from{
+            transform: rotate(-10deg);
+            text-shadow: 10px 10px 5px rgb(34, 150, 130);
+        }
+        to{
+            transform: rotate(10deg);
+            text-shadow: 10px 10px 5px rgb(66, 8, 8);
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        message loading...
+        <div class="msg">
+          <div class="loader">
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+          </div>
+        </div>
+      </div>
+      <div class="div2">
+        codeloader
+        <div class="bracket">
+          <span class="span1"> {</span>
+          <span class="span1"> }</span>
+        </div>
+      </div>
+      <div class="div3">
+        music lodar
+        <div class="music">
+          <span class="span2"> </span>
+          <span class="span2"> </span>
+          <span class="span2"> </span>
+          <span class="span2"> </span>
+          <span class="span2"> </span>
+          <span class="span2"> </span>
+          <span class="span2"> </span>
+        </div>
+      </div>
+      <div class="div4">3d dot lader
+        <div class="loader1">
+            <span class="span3"></span>
+            <span class="span3"></span>
+            <span class="span3"></span>
+            <span class="span3"></span>
+          </div>
+      </div>
+      <div class="div5">b10 loader
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+      </div>
+      <div class="div6">Hacker Loader
+        <div class="text">Loading
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

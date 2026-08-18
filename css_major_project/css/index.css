@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    align-items: center;
+    left: 10%;
+    z-index: 1000;
+}
+
+img {
+    width: 4%;
+    height: 5%;
+    background: transparent;
+    border-radius: 60%;
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-clinic {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../images/clinic.png");
+    object-fit: cover;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateX(-100%);
+    animation: clinicSlide 2s forwards;
+}
+
+.section-salon {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../images/salon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateX(100%);
+    animation: salonslide 2s forwards;
+}
+
+.section-title {
+    margin-top: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.section-line {
+    font-size: 30px;
+    color: yellow;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+.section-description {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 2;
+    text-align: center;
+}
+
+.section-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+@keyframes clinicSlide {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes salonslide {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

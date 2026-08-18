@@ -1,0 +1,395 @@
+#salon {
+    color: gold;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section1 {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/serives-section1-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section1 h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    animation: top 2s ease 0.2s forwards;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.section2 h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 35px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.section2>P {
+    padding-top: 2%;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+
+.section21 {
+    display: flex;
+    padding-top: 10%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec211,
+.sec212,
+.sec213 {
+    height: 400px;
+    padding-right: 4%;
+    width: 400px;
+}
+
+.sec211 img,
+.sec212 img,
+.sec213 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    height: 100px;
+    width: 100px;
+}
+
+.sec211 h2,
+.sec212 h2,
+.sec213 h2 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+.sec211 p,
+.sec212 p,
+.sec213 p {
+    padding-top: 5%;
+    font-size: 17px;
+    color: #000;
+    text-align: center;
+}
+
+.section22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.section221 {
+    width: 300px;
+    height: 400px;
+    color: #fff;
+}
+
+.section221 img,
+.section223 img,
+.section225 img,
+.section227 img,
+.section229 img,
+.section2211 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section222,
+.section224,
+.section226,
+.section228,
+.section2210,
+.section2212 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: #23525a;
+}
+
+.section222 img,
+.section224 img,
+.section226 img,
+.section228 img,
+.section2210 img,
+.section2212 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+    background-blend-mode: lighten;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section222 p,
+.section224 p,
+.section226 p,
+.section228 p,
+.section2210 p,
+.section2212 p {
+    font-size: 17px;
+}
+
+.section222 h1,
+.section224 h1,
+.section226 h1,
+.section228 h1,
+.section2210 h1,
+.section2212 h1 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.section222 .price,
+.section224 .price,
+.section226 .price,
+.section228 .price,
+.section2210 .price,
+.section2212 .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+@keyframes min {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.section221,
+.section222,
+.section223,
+.section224 {
+    animation: min 3.5s ease-in 1.5s forwards;
+}
+
+.section225,
+.section226,
+.section227,
+.section228 {
+    animation: min 3.5s ease 2.5s forwards;
+}
+
+.section229,
+.section2210,
+.section2211,
+.section2212 {
+    animation: min 3.5s ease 4s forwards;
+}
+
+.section222,
+.section223,
+.section224,
+.section225,
+.section226,
+.section227,
+.section228,
+.section229,
+.section2210,
+.section2211,
+.section2212 {
+    width: 300px;
+    height: 400px;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.4s ease, border 0.4s ease;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section221:hover,
+.section223:hover,
+.section225:hover,
+.section227:hover,
+.section229:hover,
+.section2211:hover {
+    border: 2px solid gold;
+    border-radius: 10px;
+    transform: scale(1.1) rotate(-1deg);
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../images/section1bck.png");
+    background-attachment: fixed;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.section31,
+.section32,
+.section33,
+.section34 {
+    padding: 20px;
+}
+
+@property --num {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@keyframes countUp {
+    from {
+        --num: 0;
+    }
+}
+
+.section31 h1,
+.section32 h1,
+.section33 h1,
+.section34 h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.counter {
+    counter-reset: num var(--num);
+    animation-name: countUp;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.counter::before {
+    content: counter(num) "+";
+}
+
+.section31 p,
+.section32 p,
+.section33 p,
+.section34 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.section41 {
+    display: flex;
+    height: 70vh;
+    width: 90%;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    background-image: url("../images/clicic\ enterence.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.section411 p {
+    text-align: center;
+    font-size: 30px;
+    color: goldenrod;
+}
+
+.section41 div h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #484040;
+}
+
+.section412 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 380px;
+    width: 440px;
+    border-radius: 20px;
+}
+
+.section412 form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.section412 input {
+    width: 100%;
+    font-size: 30px;
+    padding: 8px 4px;
+    border: none;
+    border-bottom: 2px solid rgb(169, 162, 162);
+    background: transparent;
+    color: rgb(80, 80, 80);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section412 input::placeholder {
+    color: rgb(172, 160, 160);
+}
+
+.section412 input:focus {
+    outline: none;
+    border-bottom-color: goldenrod;
+}
+
+.section412 button {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 20px;
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section412 button:hover {
+    background-color: #b8860b;
+}

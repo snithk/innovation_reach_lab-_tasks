@@ -1,0 +1,256 @@
+#contact {
+    color: gold;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section1 {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/section1bck.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
+.section1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    animation: slide 2s ease 2s forwards;
+}
+
+.section1 p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    animation: slide 2s ease 2s forwards;
+}
+
+.section2 {
+    display: flex;
+    background-color: rgb(222, 179, 122);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section21 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+}
+
+.section211 {
+    padding-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section212 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section211 h1,
+.section212 h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 40px;
+    padding-top: 70px;
+    padding-left: 1px;
+}
+
+.section211 p,
+.section212 p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 50px;
+    padding: 10px;
+    color: white;
+}
+
+.section211 p>span .section212 p>span {
+    color: antiquewhite;
+}
+
+.sec211-image {
+    display: flex;
+    padding: 10px;
+    align-items: start;
+}
+
+.sec211-image img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.section212 img {
+    height: 400px;
+    width: 85%;
+    padding: 20px;
+    animation: section2img1 2s ease-in-out 2s forwards;
+}
+
+.section22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: #2c5f66;
+    padding: 60px;
+    margin-bottom: 20px;
+    animation: section2img2 2s ease-in-out 2s forwards;
+}
+
+.section22 h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: whitesmoke;
+}
+
+.section22 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section22 form input {
+    font-size: 18px;
+    padding: 20px;
+    padding-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+}
+
+.section22 button {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: gold;
+    color: #2c5f66;
+    border-radius: 20px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgb(222, 179, 122);
+}
+
+.section3-h1 {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes scrollCards {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.section32-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section32 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scrollCards 10s linear infinite;
+}
+
+.section321,
+.section322,
+.section323,
+.section324 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2c5f66;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.section321 h1,
+.section322 h1,
+.section323 h1,
+.section324 h1 {
+    font-size: 30px;
+    color: goldenrod;
+    padding: 20px;
+}
+
+.section321 p,
+.section322 p,
+.section323 p,
+.section324 p {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.section321 p:last-child,
+.section322 p:last-child {
+    font-size: 18px;
+    padding-top: 80px;
+}
+
+.section323 p:last-child {
+    font-size: 18px;
+    padding-top: 100px;
+}
+
+.section324 p:last-child {
+    font-size: 18px;
+    padding-top: 120px;
+}

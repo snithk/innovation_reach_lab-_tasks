@@ -1,0 +1,224 @@
+#services-link {
+    color: gold;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section1 {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/serives-section1-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
+.section1 h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    animation: top 2s ease 0.2s forwards;
+}
+
+.section1 p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    animation: 2s top ease 0.2s forwards;
+}
+
+.section2 {
+    display: flex;
+    background-color: #06363c;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    align-items: center;
+    height: auto;
+}
+
+.sec2 h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4%;
+    padding: auto;
+    padding-top: 0%;
+    animation: slide 2s ease 1s forwards;
+}
+
+.section21 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 30px
+}
+
+.se2-wellness-clinic,
+.se2-salon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.se2-wellness-clinic a img {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    animation: section2img1 2s ease-in 2s forwards;
+}
+
+.se2-salon a img {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    animation: section2img2 2s ease-in 2s forwards;
+}
+
+.se2-salon>p,
+.se2-wellness-clinic>p {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.section4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(225, 207, 185);
+}
+
+.section4>p {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    animation: top 2s ease 5s forwards;
+}
+
+.section4>h1 {
+    text-align: center;
+    font-family: 50px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    animation: top 2s ease 5s forwards;
+}
+
+.section4-review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    transition: transform .4s ease;
+}
+
+.section4-review1,
+.section4-review2,
+.section4-review3,
+.section4-review4,
+.section4-review5,
+.section4-review6 {
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 1s ease 0.1s;
+    box-shadow: 2px 5px 5px 2px rgb(222, 222, 147);
+}
+
+.section4-review1 p:nth-child(1),
+.section4-review2 p:nth-child(1),
+.section4-review3 p:nth-child(1),
+.section4-review4 p:nth-child(1),
+.section4-review5 p:nth-child(1),
+.section4-review6 p:nth-child(1) {
+    color: gold;
+    font-size: 20px;
+}
+
+.section4-review1 p:nth-child(2),
+.section4-review2 p:nth-child(2),
+.section4-review3 p:nth-child(2),
+.section4-review4 p:nth-child(2),
+.section4-review5 p:nth-child(2),
+.section4-review6 p:nth-child(2) {
+    text-align: justify;
+    padding: 5px;
+    padding-top: 20%;
+}
+
+.section4-review1:hover,
+.section4-review2:hover,
+.section4-review3:hover,
+.section4-review4:hover,
+.section4-review5:hover,
+.section4-review6:hover {
+    transform: translateY(-10px) scale(1.03) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.section4-review5:hover {
+    transform: scale(0.8);
+}
+
+.section4-review1 {
+    animation: section2img1 5s ease 5s forwards;
+}
+
+.section4-review3 {
+    animation: section2img2 5s ease 5s forwards;
+}
+
+.section4-review1-customer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.section4-review1-customer>span:first-child {
+    padding-top: 10px;
+    font-size: 20px;
+    padding-top: 2%;
+    font-weight: bolder;
+}
+
+.section4-review1-customer>span {
+    font-size: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.section4 hr {
+    margin-top: 10%;
+    height: 2px;
+}
+
+.section4-review2,
+.section4-review4,
+.section4-review6 {
+    background-image: url("../images/section4-image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+    animation: boxBloom 4s ease 5s forwards;
+}
