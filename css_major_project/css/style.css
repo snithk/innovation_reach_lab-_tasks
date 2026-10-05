@@ -12,13 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/* after */
-
-html {
-    overflow-x: hidden;
-}
-
 @keyframes slide {
     from {
         transform: translateY(100%);
@@ -396,8 +389,7 @@ hr {
     padding-right: 20px;
 }
 
-@media (max-width: 600px) {
-    /* NAVBAR */
+@media (max-width: 700px) {
     nav {
         width: 100%;
         min-height: 80px;
@@ -408,7 +400,6 @@ hr {
         flex-wrap: nowrap;
         padding: 10px 15px;
     }
-    /* LOGO */
     .heading {
         display: flex;
         align-items: center;
@@ -421,20 +412,16 @@ hr {
         font-size: 25px;
         padding: 0 0 0 8px;
     }
-    /* HIDE DESKTOP MENU */
     .heading2 {
         display: none;
     }
-    /* HIDE SOCIAL ICONS */
     .logos {
         display: none;
     }
-    /* SHOW MOBILE MENU */
     .mobile-menu {
         display: block;
         position: relative;
     }
-    /* HAMBURGER */
     .mobile-menu>details>summary {
         list-style: none;
         cursor: pointer;
@@ -446,7 +433,6 @@ hr {
     .mobile-menu>details>summary::-webkit-details-marker {
         display: none;
     }
-    /* MOBILE MENU BOX */
     .mobile-menu-list {
         position: absolute;
         top: 50px;
@@ -458,7 +444,6 @@ hr {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         z-index: 5000;
     }
-    /* MAIN MOBILE LINKS */
     .mobile-menu-list>a {
         display: block;
         width: 100%;
@@ -472,7 +457,6 @@ hr {
         color: gold;
         background-color: rgba(255, 255, 255, 0.08);
     }
-    /* MOBILE SERVICES */
     .mobile-services {
         width: 100%;
     }
@@ -494,7 +478,6 @@ hr {
     .mobile-services[open]>summary span {
         transform: rotate(180deg);
     }
-    /* SERVICES SUBMENU */
     .mobile-services-list {
         background-color: #234d53;
         padding: 5px 0;
@@ -510,10 +493,40 @@ hr {
         color: gold;
         background-color: rgba(255, 255, 255, 0.08);
     }
-    .section71 p {
-        font-size: 5px;
+    .section6 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .section61,
+    .section62,
+    .section63,
+    .section64 {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 0 30px 0;
+        align-items: center;
+    }
+    .section62 h1 {
+        text-align: center;
+    }
+    .section7 {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
     }
     .section7>p {
-        font-size: 5px;
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    .section71 {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .section71 p {
+        font-size: 13px;
+        padding: 0;
     }
 }

@@ -87,12 +87,17 @@ body {
     margin-bottom: 10px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
+    text-align: center;
     animation: slide 1s ease 1s forwards;
 }
 
 .section11 p {
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
     margin-bottom: 10px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
@@ -154,7 +159,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color: rgb(234, 217, 196);
     height: 100vh;
@@ -164,6 +168,10 @@ body {
     padding-top: 20px;
     font-size: 30px;
     font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     animation: slide 2s ease 8s forwards;
@@ -179,11 +187,12 @@ body {
 
 .section31 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .section3-clinic {
-    height: 70vh;
-    width: 40vw;
+    height: 530px;
+    width: 600px;
     color: #fff;
     margin-right: 20px;
     border-radius: 30px;
@@ -214,8 +223,8 @@ body {
 }
 
 .section3-salon {
-    height: 70vh;
-    width: 40vw;
+    height: 530px;
+    width: 600px;
     flex-direction: column;
     display: flex;
     border-radius: 30px;
@@ -604,4 +613,130 @@ hr {
 
 .section71 p {
     padding-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    .section2 {
+        height: auto;
+        padding: 60px 20px;
+    }
+    .section2 img {
+        width: 35vw;
+        height: 45vh;
+    }
+    .section2 div {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: 20px 0;
+    }
+    .section3-clinic,
+    .section3-salon {
+        width: 45%;
+        height: 420px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section11 h1 {
+        font-size: 28px;
+        padding: 0 15px;
+    }
+    .section11 p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .section2 {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 15px;
+    }
+    .section2 img {
+        width: 70vw;
+        height: 35vh;
+        object-fit: cover;
+        margin: 10px 0;
+    }
+    .section2-image1,
+    .section2-image2 {
+        top: 0;
+        left: 0;
+    }
+    .section2 div {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+    }
+    .section2 div h1 {
+        font-size: 24px;
+    }
+    .section2 div p {
+        font-size: 16px;
+    }
+
+    .section3 {
+        height: auto;
+        padding: 40px 0;
+    }
+    .section3 h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .section31 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section3-clinic,
+    .section3-salon {
+        width: 90%;
+        height: 350px;
+        margin-right: 0;
+    }
+    .section3-clinic > p,
+    .section3-salon > p {
+        font-size: 34px;
+    }
+
+    .section4 > h1 {
+        font-size: 32px;
+        padding: 0 15px;
+    }
+    .section4-review1,
+    .section4-review2,
+    .section4-review3,
+    .section4-review4,
+    .section4-review5,
+    .section4-review6 {
+        width: 90%;
+        height: auto;
+        min-height: 260px;
+    }
+
+    .section5 h1 {
+        font-size: 32px;
+    }
+    .section5-p {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section11 h1 {
+        font-size: 22px;
+    }
+    .section3-clinic > p,
+    .section3-salon > p {
+        font-size: 26px;
+    }
+    .section4-review1,
+    .section4-review2,
+    .section4-review3,
+    .section4-review4,
+    .section4-review5,
+    .section4-review6 {
+        width: 95%;
+    }
 }

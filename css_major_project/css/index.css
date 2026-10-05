@@ -50,7 +50,7 @@ img {
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     transform: translateX(-100%);
-    animation: clinicSlide 2s forwards;
+    animation: clinicSlide 4s ease forwards;
 }
 
 .section-salon {
@@ -66,7 +66,7 @@ img {
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     transform: translateX(100%);
-    animation: salonslide 2s forwards;
+    animation: salonslide 4s ease forwards;
 }
 
 .section-title {
